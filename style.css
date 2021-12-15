@@ -48,6 +48,8 @@ body {
     margin-bottom: 15px;
 }
 
+
+
 @media screen and (max-width: 576px) {
 
     .main-info,
@@ -67,8 +69,6 @@ body {
         margin-right: 0;
     }
 }
-
-
 
 .contact-info__header,
 .contact-info__sub-header {
@@ -102,11 +102,18 @@ body {
     text-decoration: none;
     display: flex;
     justify-content: start;
+    border-bottom: solid 1px transparent;  
+}
+
+.contact-info__item:hover {
+  border-bottom: solid 1px #e6657a;  
+  transition: .5s;
 }
 
 .contact-info__item:not(:last-child) {
     margin-bottom: 20px;
 }
+
 
 .contact-info__item-icon-wrapper {
     margin-right: 10px;
@@ -133,6 +140,11 @@ body {
     border-color: var(--text-decoration-color);
 }
 
+.contact-info__avatar:hover {
+  width: 120px;
+  height: 120px;
+  transition: .5s;
+}
 
 
 
